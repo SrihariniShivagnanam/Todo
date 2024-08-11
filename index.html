@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        #input-box {
+            width: 50%;
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #add {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #3580e9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #add:hover {
+            background-color: #dd931b;
+        }
+        #list-container {
+            list-style: none;
+            padding: 0;
+            margin: 20px;
+        }
+        #list-container li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        #list-container li:last-child {
+            border-bottom: none;
+        }
+        #list-container li:before {
+            content: "\2022"; /* Unicode for bullet point */
+            margin-right: 10px;
+            color: #d0841b;
+        }
+        .delete-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #d3e01f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .delete-button:hover {
+            background-color: #dc1b1b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Todo App</h1>
+    <input type="text" id="input-box" placeholder="Enter a task...">
+    <button id="add">Add</button>
+    <ul id="list-container"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
